@@ -45,7 +45,7 @@ Generate list of episodes and extras for the language shown. - NOTE: _extras nee
 	<![endif]-->
 
   <title>
-  {% if page.title %}{{ page.title }}{% endif %}{% if page.title and site.title %} &ndash; {% endif %}{% if site.title %}{{ site.title }}{% endif %}
+  <h1 class="maintitle"><a href="{{ page.root }}{% link index.md %}">{% if site.title %}{{ site.title }}{% endif %}</a>{% if page.title and site.title %}: {{ page.title }}{% endif %}</h1>
   </title>
 
   </head>
